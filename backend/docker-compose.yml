@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  postgres:
+    container_name: postgres_a
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: db_new
+    ports:
+      - 5432:5432
